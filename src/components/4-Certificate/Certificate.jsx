@@ -13,7 +13,7 @@ function Certificate() {
 
   return (
      <div className=" flex flex-col "> 
-      <h1 className="sm:!mb-10 sm:text-3xl  text-[var(--title)]">Certificate</h1>
+      <h1 className="m-auto sm:!mb-10 sm:text-3xl  text-[var(--title)]">Certificate</h1>
     <Carousel
       plugins={[plugin.current]}
       onMouseEnter={plugin.current.stop}
@@ -23,11 +23,11 @@ function Certificate() {
       }}
       orientation="vertical"
     >
-      <CarouselContent className="sm:h-[250px] md:h-[300px] lg:h-[450px] xl:h-[600px] 2xl:h-[650px] h-[150px]">
-        {["certificate1.jpg", "certificate2.jpg", "certificate3.jpg"].map((img, index) => (
-          <CarouselItem key={index} className="pt-1 md:basis-1/2">
-            <div className="relative w-[98%]">
-              <img className="w-full" src={`/${img}`} alt={`Certificate ${index + 1}`} />
+      <CarouselContent className="sm:h-[400px] md:h-[560px] lg:h-[710px] xl:h-[870px] 2xl:h-[950px] h-[250px]">
+        {["certificate2.jpg", "certificate1.jpg", "certificate3.jpg"].map((img, index) => (
+          <CarouselItem key={index} className="pt-1 basis-1/2  ">
+            <div className="relative w-[98%] !mb-4">
+              <img className="w-full border-4 border-[var(--bgheader)]" src={`/${img}`} alt={`Certificate ${index + 1}`} />
             </div>
           </CarouselItem>
         ))}
