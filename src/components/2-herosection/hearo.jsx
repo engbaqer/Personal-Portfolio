@@ -5,10 +5,10 @@ export default function hearo() {
     <section className="flex">
       <div className="left_section  ">
         <div className="photo_icon flex">
-          <img src="/public/Screenshot 2025-06-11 190854.png" alt="" className="my_photo" />
+          <img src="https://imgur.com/a/FbZyXwh" alt="" className="my_photo" />
           <div className="icon-checkmark"></div>
         </div>
-        <h1>Junior Web Developer & Computer Engineer </h1>
+        <h1>Junior Web Developer & Computer Engineer</h1>
         <div className="icons">
           <a href="https://www.linkedin.com/in/baqer-muhsin-7400462b3/" className="icon icon-linkedin"></a>
           <a href="https://github.com/engbaqer" className="icon icon-github"></a>
