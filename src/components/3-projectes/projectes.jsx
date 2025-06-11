@@ -15,7 +15,7 @@ function Main() {
   React.useEffect(() => {
     if (!api) return
 
-    setCount(api.scrollSnapList().length)
+    setCount(3)
     setCurrent(api.selectedScrollSnap() + 1)
 
     api.on("select", () => {
