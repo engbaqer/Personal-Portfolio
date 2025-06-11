@@ -26,7 +26,7 @@ function Main() {
   return (
     <>
     <div className=" flex flex-col "> 
-      <h1 className="sm:!mb-10 sm:text-3xl !mb-5 text-[var(--title)]"> Projectes</h1>
+      <h1 className="sm:!mb-10 sm:text-3xl  text-[var(--title)]"> Projectes</h1>
     <Carousel setApi={setApi}>
       <CarouselContent className="w-[90%] ">
        <CarouselItem>

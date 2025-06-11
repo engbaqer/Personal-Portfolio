@@ -12,6 +12,8 @@ function Certificate() {
   );
 
   return (
+     <div className=" flex flex-col "> 
+      <h1 className="sm:!mb-10 sm:text-3xl  text-[var(--title)]">Certificate</h1>
     <Carousel
       plugins={[plugin.current]}
       onMouseEnter={plugin.current.stop}
@@ -31,6 +33,7 @@ function Certificate() {
         ))}
       </CarouselContent>
     </Carousel>
+    </div>
   );
 }
 
