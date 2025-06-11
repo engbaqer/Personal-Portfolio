@@ -1,0 +1,58 @@
+.submit_don{
+color: var(--title);
+}
+
+
+
+
+
+
+.contact_head{
+    margin-top: -30px;
+       gap: 20px;
+}
+.contact_head .icon-envelop{
+font-size: 35px;
+color: var(--subtitle);
+
+}
+.p_in_head{
+    color: var(--subtitle);
+    margin-top: 10px;
+}
+
+section{
+    justify-content: space-between;
+}
+section form div{
+    align-items: start ;
+gap: 6px;
+}
+#email,#textarea{
+    all:unset;
+    background-color: rgba(48, 47, 47, 0.434);
+    margin: 12px 15px;
+    width: 80%;
+    border: 2px solid var(--borderColor);
+    border-radius: 5px;
+    transition: 0.2s;
+}
+#email:hover,#textarea:hover{
+    border-color: rgb(90 137 170 / 46%) ;
+}
+#email:focus,#textarea:focus{
+    border-color: rgb(90 137 170 / 46%) ;
+}
+section form button{
+    color: #94a1aa;
+    background-color:#2d2e33e3 ;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid var(--borderColor);
+    transition: 0.2s;
+}
+section form button:hover{
+    font-weight: 600;
+    color: var(--title);
+    border-color:  rgb(90 137 170 / 46%) ;
+}

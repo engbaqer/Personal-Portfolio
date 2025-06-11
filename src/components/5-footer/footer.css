@@ -1,0 +1,20 @@
+.footer{
+    color: var(--subtitle);
+    font-size: small;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    text-align: end;
+}
+.icon-arrow-up2{
+    position: fixed;
+    bottom: 15px;
+    background-color: var(--blue);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 3%;
+    color: aliceblue;
+}

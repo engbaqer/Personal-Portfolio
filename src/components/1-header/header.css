@@ -1,0 +1,109 @@
+ 
+/* header disign  */
+ 
+ header.flex {
+    justify-content: space-between;
+    padding: 0 2.4rem;
+    margin-top: 1rem;
+ }
+ header nav{
+    background-color:var( --bgheader);
+    padding:0.44rem 1.6rem;
+    border-radius: 55px;
+    box-shadow: 1px 1px 50px rgba(147, 134, 134, 0.087);
+ }
+ header ul.flex {
+    gap: 16px;
+}
+header ul li a {
+    color: var(--title);
+    opacity: 0.8;
+    font-size: 0.88rem;
+    font-weight: 500;
+   
+}
+header ul li a:hover{
+    color : var(--blue);
+    opacity: 1;
+    font-size: 1rem;
+}
+
+/* header disign  */
+
+/* menu for small disply */
+header .minu {
+    display: none;
+}
+header .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary);
+    opacity: 0.8;
+    z-index: 22;
+}
+@keyframes scaling{
+    0% {transform:scale(1)}
+   
+    50% {transform: scale(1.3);}
+   
+    100% {transform: scale(1);}
+    
+    }
+header .fixed ul.modal{
+    animation: scaling 0.7s 1;
+width: 75%;
+    margin: 1.5rem auto 0rem  ; 
+    padding: 12px;
+    border-radius: 1rem;
+    background-color: var(--secondry);
+
+   
+}
+
+
+header .fixed ul.modal li {
+    border-bottom: 1px solid var(--borderColor) ;
+    padding: 0.77rem 0;
+}
+header .fixed ul.modal li:last-child{border: none;}
+header .fixed ul.modal li a{
+    font-size: 1rem;
+}
+header .fixed ul.modal li:first-child {
+    text-align: right;
+    border: none;
+    padding: 0;
+}
+header .icon-cross:hover {
+    color: red;
+
+}
+/* menu for small disply */
+
+
+/* icon styling */
+header .icon-menu ,header .icon-moon-o,header .icon-sun{
+    background-color: var(--bgheader);
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    border: 0.5px solid rgba(182, 171, 21, 0.272);
+    color: var(--subtitle);
+    transition: 0.3s;
+}
+header .icon-menu:hover ,header .icon-moon-o:hover{
+    border: 0.5px solid rgba(182, 171, 21, 0.779);
+    color: var(--title);
+}
+
+/* icon styling */
+
+
+@media (max-width:700px){
+   header nav {display: none;}
+   header .minu{display: initial;}
+}
