@@ -1,8 +1,11 @@
-import React from 'react'
+
+import React,{useState} from 'react';
 import './hearo.css'
 export default function hearo() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [active, setActive] = useState();
   return (
-    <section className="flex">
+    <section className="flex ">
       <div className="left_section  ">
         <div className="photo_icon flex">
           <img src="https://i.imgur.com/3t1YG0k.png" alt="" className="my_photo" />
@@ -16,7 +19,30 @@ export default function hearo() {
           <a href="" className="icon icon-facebook2"></a>
         </div>
       </div>
-      <div className="right_section testing"></div>
+     <div
+  onClick={() => setActive(true)}
+  className={`${
+    active
+      ? 'absolute z-10 w-fit h-96 sm:!ml-90 sm:!mt-10 !ml-[-40px] !p-3 duration-[400ms] transition-all transform '
+      : 'w-50 cursor-pointer'
+  }`}
+>
+  <button
+    onClick={(e) => {
+      e.stopPropagation(); // 🔒 Prevents re-opening
+      setActive(false);
+    }}
+     className={`${
+    !active
+      ? 'hidden'
+      : 'icon-cross absolute right-0 !p-4 text-red-800'
+  }`}
+    
+  ></button>
+
+  <img className="" src="/public/CV.png" alt="" />
+</div>
+
     </section>
   );
 }
