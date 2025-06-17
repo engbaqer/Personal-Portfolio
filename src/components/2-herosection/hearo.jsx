@@ -16,7 +16,7 @@ export default function hearo() {
           <a href="" className="icon icon-facebook2"></a>
         </div>
       </div>
-      <div className="right_section testing">anmatin klkkkkkkkkkkkkkkkkkkk</div>
+      <div className="right_section testing"></div>
     </section>
   );
 }

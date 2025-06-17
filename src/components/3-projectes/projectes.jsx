@@ -31,7 +31,7 @@ function Main() {
       <CarouselContent className="w-[90%] ">
        <CarouselItem>
   <div className="relative w-[98%]">
-    <img className="w-full" src="/project1.png" alt="project" />
+    <img className="w-full h-[180px] sm:h-fit" src="/project1.png" alt="project" />
     <h2 className="absolute  top-0 left-0 bg-gray-700 opacity-50 hover: !p-4  w-full h-full sm:text-3xl flex items-end ">
       Clinical Management System
     </h2>
@@ -39,7 +39,7 @@ function Main() {
 </CarouselItem>
           <CarouselItem>
   <div className="relative w-[98%]">
-    <img className="w-full" src="/project2.png" alt="project" />
+    <img className="w-full h-[180px] sm:h-fit " src="/project2.png" alt="project" />
     <h2 className="absolute  top-0 left-0 bg-gray-700 opacity-50 hover: !p-4  w-full h-full sm:text-3xl flex items-end ">
       E-Commerce
     </h2>
@@ -47,7 +47,7 @@ function Main() {
 </CarouselItem>
           <CarouselItem>
   <div className="relative w-[98%]">
-    <img className="w-full" src="/project3.png" alt="project" />
+    <img className="w-full h-[180px] sm:h-fit" src="/project3.png" alt="project" />
     <h2 className="absolute  top-0 left-0 bg-gray-700 opacity-50 hover: !p-4  w-full h-full sm:text-3xl flex items-end ">
       Personal Portfolio
     </h2>
