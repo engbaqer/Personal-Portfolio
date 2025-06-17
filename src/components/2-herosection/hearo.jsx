@@ -40,7 +40,7 @@ export default function hearo() {
     
   ></button>
 
-  <img className="" src="/public/CV.png" alt="" />
+  <img className="" src="https://i.imgur.com/QNfRL0D.png" alt="" />
 </div>
 
     </section>
