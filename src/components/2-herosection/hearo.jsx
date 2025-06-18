@@ -24,12 +24,12 @@ export default function hearo() {
   className={`${
     active
       ? 'absolute z-10 w-fit h-96 sm:!ml-90 sm:!mt-10 !ml-[-40px] !p-3 duration-[400ms] transition-all transform '
-      : 'w-50 cursor-pointer'
+      : 'w-50 cursor-pointer border-4 border-[var(--bgheader)] '
   }`}
 >
   <button
     onClick={(e) => {
-      e.stopPropagation(); // 🔒 Prevents re-opening
+      e.stopPropagation(); //  Prevents re-opening
       setActive(false);
     }}
      className={`${
